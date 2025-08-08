@@ -12,16 +12,43 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        iframe {
-            display: block;
-            margin: 0 auto;
-            border: none;
-        }
         header {
-            padding: 10px;
+            padding: 20px;
             background: #111;
         }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: 80vh;
+            border: none;
+        }
+        .ad-container {
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: left;
+            padding: 0 20px;
+        }
+        footer {
+            background: #111;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        a {
+            color: #1e90ff;
+        }
     </style>
+
+    <!-- AdSense async script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 
@@ -30,14 +57,59 @@
     <p>Play directly in your browser</p>
 </header>
 
-<iframe 
-    frameborder="0" 
-    src="https://itch.io/embed-upload/14600524?color=333333" 
-    allowfullscreen 
-    width="1920" 
-    height="1100">
-    <a href="https://tapnsmile.itch.io/new-orbit">Play New Orbit on itch.io</a>
-</iframe>
+<main>
+
+    <!-- TOP AD -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXX"   <!-- Replace with your publisher ID -->
+            data-ad-slot="YYYYYY"           <!-- Replace with your top ad slot ID -->
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- GAME -->
+    <iframe 
+        src="https://itch.io/embed-upload/14600524?color=333333" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- BOTTOM AD -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXX"   <!-- Replace with your publisher ID -->
+            data-ad-slot="ZZZZZZ"           <!-- Replace with your bottom ad slot ID -->
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+</main>
+
+<!-- ABOUT SECTION -->
+<section>
+    <h2>About New Orbit</h2>
+    <p><strong>New Orbit</strong> is a space adventure where you navigate, survive, and explore in the depths of space.
+       Play directly in your browser without downloads, and enjoy the immersive gameplay experience.</p>
+</section>
+
+<!-- PRIVACY POLICY -->
+<section>
+    <h2>Privacy Policy</h2>
+    <p>This site uses Google AdSense to serve ads. Google may use cookies to personalize ads. 
+       You can learn more by visiting Google's <a href="https://policies.google.com/technologies/ads" target="_blank">Advertising Policies</a>.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 New Orbit Game | <a href="mailto:contact@example.com">Contact</a></p>
+</footer>
 
 </body>
 </html>
